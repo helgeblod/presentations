@@ -1,0 +1,15 @@
+centre vcentre
+
+% Going one step further
+
+* Wouldn't it be great if we could develop inside docker containers?
+
+* The magic DNS container comes to the rescue again
+
+* Defining a docker-compose.yml for each app locally it's easy
+
+* Just map the local app directory to where the code lives in production in the container
+
+* Run ~docker-compose up~ in the app-directory and it'll just work
+
+* This requires a tiny bit of magic in the docker-compose.yml file, but not much

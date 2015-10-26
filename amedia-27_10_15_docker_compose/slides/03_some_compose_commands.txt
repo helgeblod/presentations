@@ -1,0 +1,10 @@
+centre vcentre
+% Basic Docker Compose commands:
+
+* ~docker-compose up -d~ # boots all the apps defined in docker-compose.yml in the current dir
+* ~docker-compose logs~ # tails the logs of all the containers run by docker-compose
+* ~docker-compose start~ # starts all apps
+* ~docker-compose stop~ # stops all apps
+* ~docker-compose restart~ # restart all apps
+* ~docker-compose pull~ # pulls down the latest versions of all the containers
+* All commands accepts app-name parameters and will then run the commands for those apps only

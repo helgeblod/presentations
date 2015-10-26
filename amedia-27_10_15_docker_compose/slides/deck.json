@@ -1,0 +1,12 @@
+{
+  "header": {
+    "centre": "Docker Compose"
+  },
+  "footer": {
+    "left": "Jonas Helgemo",
+    "right": "\u2295 Amedia 27.10.2015"
+  },
+  "fade": {
+    "delay": 15
+  }
+}

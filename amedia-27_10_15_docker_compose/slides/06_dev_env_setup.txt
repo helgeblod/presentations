@@ -1,0 +1,10 @@
+centre vcentre
+% The setup
+
+* Awesome DNS-container is the centerpiece of the setup (thanks ~palru~!)
+
+* Created an nginx container to mimic what Varnish does in production
+
+* Create a docker-compose file that defines all apps in the aID stack
+
+* Profit?

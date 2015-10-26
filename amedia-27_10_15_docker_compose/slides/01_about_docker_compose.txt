@@ -1,0 +1,11 @@
+centre vcentre
+
+% What is Docker Compose?
+
+* A way to orchestrate the launching of several docker-containers at once
+
+* Can override environment and run commands from Dockerfiles
+
+* Can link containers toghether to make them see each-other
+
+* Makes it really easy to run a bunch of containers toghether

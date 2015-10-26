@@ -1,0 +1,29 @@
+centre vcentre
+
+% Examples from the docker-compose.yml file
+
+gaia:
+  container_name: gaia
+  image: dr.api.no/amedia/gaia
+  ports:
+    - 9050:9050
+  volumes:
+    - /etc/api:/etc/api
+  links:
+    - devdns:devdns
+
+pollux:
+  container_name: pollux
+  expose:
+    - 9057
+  env_file:
+    - ./gaia.env
+  image: dr.api.no/amedia/pollux
+  links:
+    - gaia:gaia
+    - www:www
+    - maelstrom:maelstrom
+  dns:
+    - 172.17.42.1
+
+Full source: ~https://github.com/amedia/aid-devbox/blob/master/docker-compose/docker-compose.yml~

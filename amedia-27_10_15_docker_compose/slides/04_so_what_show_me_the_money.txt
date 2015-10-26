@@ -1,0 +1,10 @@
+centre vcentre
+% So what why does this matter?
+
+* Makes it possible to boot up the whole stack, or parts of the stack with a simple command
+
+* Makes it easy to keep apps in sync with production
+
+* No need to script dependencies between apps as this is supported out of the box
+
+* Makes debug logs neat and centralized

@@ -1,0 +1,13 @@
+centre vcentre
+
+% That's great, but what about local development?
+
+* As it turns out this is where the magic DNS shines
+
+* Docker Compose runs the entire stack per default
+
+* To run apps locally just stop (or don't start) the app in docker and run as usual
+
+* The awesome DNS will magically point the app url to the local machine ip
+
+* This works the same on both Linux and OS X

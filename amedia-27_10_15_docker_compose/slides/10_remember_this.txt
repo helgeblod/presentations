@@ -1,0 +1,27 @@
+centre vcentre
+
+% Remember this one?
+
+vesta:
+  container_name: vesta_local
+  image: ruby:2.1-onbuild
+  expose:
+    - 9724
+  environment:
+    MEMCACHE_SERVERS: "memcached.localhost.api.no:11211"
+    APIADMIN_MEMCACHE_SERVER: "memcached.localhost.api.no:11211"
+    RAILS_ENV: development
+    BUNDLE_FROZEN: 0
+    BUNDLE_PATH: /gem-cache
+  volumes:
+    - .:/usr/src/app
+  volumes_from:
+    - gem-cache
+  dns:
+    - 172.17.42.1
+  command: /usr/src/app/bin/dev-server.sh
+
+gem-cache:
+  image: busybox
+  volumes:
+    - /gem-cache

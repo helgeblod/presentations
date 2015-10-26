@@ -1,0 +1,11 @@
+centre vcentre
+
+% Wishlist for a local dev-setup in docker
+
+* Consistent urls for apps to avoid constant manual config updates
+
+* Must be easy to run dockerized and non dockerized apps side by side
+
+* Pulling down latest version of dockerized apps should be easy
+
+* Simple setup on a new machine and as few local deps as possible
